@@ -1,0 +1,82 @@
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.shop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding-top: 120px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product {
+  flex-basis: calc(40% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #eee;
+  padding: 20px;
+  margin: 10px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.product:hover {
+  background-color: #fff0fb;
+}
+
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  position: relative;
+
+}
+
+.product .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product .description p:first-child {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product .description p:last-child {
+  color: #696969;
+
+}
+
+.addToCartBttn {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 20px;
+}
+
+.product:hover .addToCartBttn {
+  background-color: rgb(201, 158, 199);
+  
+}
+
